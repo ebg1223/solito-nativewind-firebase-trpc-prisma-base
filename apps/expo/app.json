@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Solito-Firebase-TRPC-Prisma-Base",
+    "slug": "sftpb",
+    "version": "1.0.0",
+    "scheme": "sftpb",
+        "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.sftpb.sftpb",
+      "supportsTablet": true,
+      "googleServicesFile": "./firebase-expo/GoogleService-Info.plist"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.sftpb.sftpb",
+      "googleServicesFile": "./firebase-expo/google-services.json"
+    },
+    "plugins": [
+      "@react-native-firebase/app",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ]
+  }
+}

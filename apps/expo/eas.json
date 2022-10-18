@@ -1,0 +1,34 @@
+{
+  "cli": {
+    "version": ">= 2.0.0"
+  },
+  "build": {
+    "development": {
+      "cache": {
+        "key": "my-key"
+      },
+      "distribution": "internal",
+      "android": {
+        "gradleCommand": ":app:assembleDebug"
+      },
+      "ios": {
+        "buildConfiguration": "Debug"
+      },
+      "node": "18.8.0"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "simulator": {
+      "ios": {
+        "buildConfiguration": "Debug",
+        "simulator": true
+      },
+      "distribution": "internal"
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {}
+  }
+}
