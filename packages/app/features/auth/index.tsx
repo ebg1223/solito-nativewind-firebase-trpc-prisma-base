@@ -1,7 +1,9 @@
 import { authInitializingAtom, userAtom } from '../../state'
 import { useAtom } from 'jotai'
-import { View, Text, Button } from 'react-native'
 import { getAuth, loginWithEmailPassword } from 'api/firebase'
+import { A, H1, P, Text, TextLink } from 'app/design/typography'
+import { Button } from 'react-native'
+
 
 export default function Auth() {
   const [authInitializing] = useAtom(authInitializingAtom)
